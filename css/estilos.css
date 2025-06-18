@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+
+
+@font-face {
+    font-family: 'mifuente';
+    font-style: Black;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(/font/Satoshi-Black.otf) format('opentype');
+
+   
+    
+  }
+
+
+body {
+
+    font-family: "Reddit Sans";
+    margin: 0;
+    background-color: #dcd5ff;
+    color: #000000;
+    text-align: center;
+
+}
+
+header {
+    background-color:  #c2b5ff;
+}
+
+nav { background-color: #fffeef; }
+
+nav a { 
+color: #000000;
+}
+
+div {
+
+    width: 30%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+header,
+main,
+nav,
+footer {
+    padding: 10px;
+    width: 100%;
+
+}
+
+
+h2 {
+
+    font-family: "Reddit Sans";
+    text-align: center;
+    font-weight: 400;
+    
+
+}
+
+
+
+h1 {
+
+    font-family: 'mifuente';
+    font-style: italic;
+    font-size: 70px;
+    margin-bottom: 10px;
+    animation: aparecer 2s steps(5);
+    text-align: center;
+    
+
+}
+
+p{
+    font-weight: 300;
+    font-family: 'Reddit Sans';
+}
+
+a {
+    color: black;
+}
+
+
+@keyframes aparecer {
+
+from { opacity: 0;}
+
+to { opacity: 1;}
+
+
+}
+
+@keyframes parpadear {
+
+    0%, 100% { opacity: 1;}
+    50% { opacity: 0;}
+}
+
+
+
+section, #portfolio div { width: 100%;}
+#portfolio div {
+
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 30px;
+
+}
+section { margin-bottom: 10px;}
+img { width: 100%;}
+
+#portfolio div img {
+
+
+border-radius: 20px;
+box-shadow: 0 0 20px rgb(68, 0, 255); 
+transition: all 0.3s linear;
+}
+
+
+#portfolio div img:hover {
+
+transform: scale(1.06);
+box-shadow: 0 0 10px rgb(255, 255, 255); 
+
+
+}
+
+#servicios {
+
+background-color: white;
+padding: 10px;
+ }
+
+.servicios {
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+padding: 10px;
+background-color: #fffeef;
+text-align: center;
+
+      }
+      
+.proyecto {
+width: 40%;
+max-width: 400px;
+border: 1px solid #ddd;
+border-radius: 10px;
+background-color: white;
+padding: 15px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease;
+
+      }
+      
+ .proyecto:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+        animation: parpadear 2s steps(5);
+      }
+
+    
+
+    
+footer { background-color: #000000; color: white;}
+
+
